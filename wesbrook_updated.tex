@@ -1,0 +1,135 @@
+% ============================================================
+%  Premier Undergraduate Scholarships & Wesbrook Scholars 2026/27
+%  Personal Statement (<= 500 words) + Statement of Activities (1 page)
+%
+%  Compliance built in:
+%    - 12pt base font; NO \small/\footnotesize used anywhere (min 12pt rule)
+%    - 0.8in margins (rule is >= 0.75in; the extra 0.05in is a safety buffer)
+%    - Personal statement first, then activities, in one PDF
+%    - Activities headings in the order listed in the instructions
+%
+%  Word count (statement only):  texcount -inc -sum wesbrook_application.tex
+%    (texcount only counts text between %TC:endignore ... %TC:ignore)
+%
+%  Rename the output PDF to:  Irene Berezin (43769694).pdf
+%  Red [bracketed] text = things to fill in / verify. Delete \fillin before submitting.
+%  MARKUP VERSION: blue = suggested edits. See wesbrook_clean.tex for the accepted text.
+% ============================================================
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[margin=0.8in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage[normalem]{ulem}
+% ---- Suggested-edit markup (all in blue) ----
+%   \add{...}  = new text      \del{...} = suggested cut (struck through)
+%   \note{...} = why           red \fillin{...} = something only you can verify
+\newcommand{\add}[1]{\textcolor{blue}{#1}}
+\newcommand{\del}[1]{\textcolor{blue}{\sout{#1}}}
+\newcommand{\note}[1]{\textcolor{blue}{\textit{[#1]}}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Section headings: bold, 12pt, with a rule (headings are required)
+\titleformat{\section}{\normalsize\bfseries\scshape}{}{0pt}{}[\vspace{0.1ex}\titlerule]
+\titlespacing*{\section}{0pt}{0.8ex}{0.3ex}
+
+% Placeholder marker — search for \fillin before submitting
+\newcommand{\fillin}[1]{\textcolor{red}{[#1]}}
+
+% \entry{Role / Award}{Organization}{Month Year -- Month Year; X hrs/week}{detail}
+%   Run-in layout (one paragraph, hanging indent) so the page fits:
+%   Role, Organization (dates; hours) --- detail.
+%   Leave the 4th argument empty ({}) for no detail.
+\newcommand{\entry}[4]{%
+  \par\hangindent=1em\hangafter=1
+  \textbf{#1}\if\relax\detokenize{#2}\relax\else, #2\fi\ \textit{(#3)}%
+    \if\relax\detokenize{#4}\relax\else\ --- #4\fi\par
+  \vspace{0.1ex}}
+
+% ------------------------------------------------------------
+\begin{document}
+
+% ======================= PERSONAL STATEMENT =================
+%TC:ignore
+\begin{center}
+  {\large\bfseries Personal Statement}\\[0.3ex]
+  Irene Berezin \quad|\quad 43769694
+\end{center}
+\vspace{1ex}
+\setlength{\parskip}{0.8em}
+%TC:endignore
+
+% --- Write in first person, max 500 words. Counted by texcount. ---
+
+
+The first thing I nearly accomplished at UBC was leaving it. In October of my first year, all of my midterms came back between 50 and 60 percent, and I was looking up flights home, how to withdraw from my degree, and how much money I had wasted coming here. By November, I had a withdrawal on my transcript, I had lost 25 pounds, and every day was filled with terror. I didn't yet know that what I was fighting had a name--- Generalized Anxiety Disorder.
+
+With treatment, support from the Centre for Accessibility, and remarkable professors, I found my footing. Three years later, I am one of eight students in the Honours Economics program, and I have tried to become the support I didn't have in first year. As Editor-in-Chief of IONA, UBC's premier undergraduate economics journal, I teach 40 first- to third-year students statistics and how to critically analyze economic research. I am launching a graduate school mentorship program for women in economics and the social sciences. I also mentor with AGORA and the Undergraduate Research Opportunities club, and volunteer as a peer tutor at the VSE.
+
+In my second year, I joined a UBC project on how Canada's public health officials were treated online during COVID-19. While colleagues interviewed health experts, nearly all of whom had been abused online, I analyzed 8 million tweets and uncovered large-scale harassment campaigns against public health officials. We found that trusted experts were driven out of public conversation, with misinformation filling that gap. 
+
+In my third year, my team won the Bank of Canada's national Governor's Challenge, presenting our forecast of the Canadian economy to the Bank's leadership, only the second win in UBC's history. The Bank then hired me as one of three undergraduate summer researchers. Canada's mortgage rules, such as the mortgage stress test, decide which families can buy a home. I built a new way to measure their effects by having a computer read decades of Canadian financial news. I presented this work to economists across the Bank, and it now forms the basis of a paper with two Bank economists. Work like this helps our Central Bank judge whether its rules actually protect families, without shutting them out of owning a home. I also received the Bank's \$10,000 Master's Scholarship Award for Women in Economics and Finance.
+
+My Honours thesis uses game theory to tackle one of the most pressing problems in AI safety--- the problem of AI alignment. If AI systems can tell when they are being tested, our safety tests tell us very little. Game theory, the mathematics of strategic decisions, was built for this kind of problem: economists use it to design random audits that keep companies honest between inspections. With Professor Ying Gao, I used these tools to study how platforms like YouTube should decide how long to try out new creators. My thesis applies them to AI. I treat the developer and the AI system as two players, and work out how often, and in what form, developers should run surprise tests so that behaving well at all times becomes the AI’s best strategy. 
+
+Next, I plan to complete a Master's in Computer Science at UBC and then a PhD in economics, with the goal of becoming a professor or AI researcher. This award would let me focus on research and pay for the computing power my thesis requires. AI systems are quickly taking on work that affects all of us, from answering medical questions to writing the software our banks and hospitals run on. Making sure we can trust them is one of the most important problems we face, and it's a problem I want to spend my life tackling. 
+
+%TC:ignore
+\newpage
+\setlength{\parskip}{0pt}
+
+% ======================= STATEMENT OF ACTIVITIES ============
+
+% ======================= STATEMENT OF ACTIVITIES ============
+{\centering\bfseries STATEMENT OF ACTIVITIES\par}
+ 
+\section*{Personal Information}
+Irene Berezin \quad|\quad iberez01@student.ubc.ca \quad|\quad Student No. 43769694
+ 
+\section*{Academic Achievements and Education}
+\entry{B.A., Honours Economics}{University of British Columbia}{Sep~2023 -- May~2027, expected}%
+  {90\% average; one of eight students admitted to Honours. Thesis designs ``surprise inspections'' so that AI systems cannot behave well only when they know they are being tested.}
+\entry{Master's Scholarship Award for Women in Economics \& Finance}{Bank of Canada}{Mar~2026}%
+  {\$10,000 national award.}
+\entry{Trek Excellence Scholarship (x2)}{UBC}{Aug~2024, Aug~2025}%
+  {Top 5\% of year and faculty.}
+\entry{Governor's Challenge -- National Winner}{Bank of Canada}{Sep~2025 -- Jan~2026; 10 hrs/wk}%
+  {Beat 27 university teams, only UBC's second win. Forecast Canadian inflation and how tariffs would raise prices in each of the 10 provinces; presented to senior Bank leaders, including a deputy governor.}
+ 
+\section*{University Activities}
+\entry{Editor-in-Chief}{IONA Journal of Economics}{May~2026 -- present; 6 hrs/wk}%
+  {Lead UBC's undergraduate economics journal (Best Economics Club Award, 2025/26) and teach 40 students to read and judge research. Launching a mentorship program to help women in economics and the social sciences reach graduate school. Senior Editor, Oct~2025 -- May~2026; 5 hrs/wk.}
+\entry{Research Assistant}{Prof.\ Jonathan Graves, Economics}{Feb~2024 -- May~2026; 5 hrs/wk term, 20--40 summer}%
+  {Ran workshops teaching 200+ students to use AI in their research. Used AI to read 3,000+ pages of 19th-century BC Supreme Court rulings and measure racial bias in judges' reasoning.}
+\entry{Research Assistant}{Prof.\ Ying Gao, Economics}{May~2026 -- present; 10 hrs/wk}%
+  {Proved results for a paper on how long platforms like YouTube should try out new creators, and how that shapes creators' effort.}
+\entry{Research Assistant}{Prof.\ Laura Nelson, Sociology}{Jun~2024 -- Sep~2025; 10 hrs/wk}%
+  {Analyzed 8 million tweets and uncovered large-scale harassment campaigns against Canadian public health officials during COVID-19.}
+ 
+\section*{Community \& Volunteer Services}
+\entry{Mentor}{AGORA Economics Mentorship; Undergraduate Research Opportunities}{Sep~2026 -- present; 3 hrs/wk each}%
+  {Help first- and second-year students start research or find research positions.}
+\entry{Volunteer Peer Academic Tutor}{Vancouver School of Economics}{Sep~2025 -- present; 2 hrs/wk}%
+  {Tutor students in economics, statistics, and math.}
+ 
+\section*{Athletics}
+\entry{Backcountry Skiing \& Mountaineering}{Varsity Outdoor Club}{Sep~2023 -- present; 5 hrs/wk}%
+  {Lead and join ski-touring and alpine mountaineering trips.}
+ 
+
+
+\section*{Other Activities}
+\entry{Research Assistant, Financial Stability Department}{Bank of Canada}{May~2026 -- present; 40 hrs/wk summer, 5 hrs/week now.}
+ {One of three undergraduates hired. Built a new way to measure the effects of Canada's mortgage rules, such as the mortgage stress test, by having a computer read decades of Canadian financial news. Presented to economists across the Bank; now the basis of a paper.}
+
+%TC:endignore
+
+\end{document}
